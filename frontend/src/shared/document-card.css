@@ -1,0 +1,83 @@
+.document__img img{
+    width: 100%;
+
+    border-radius: 5px 5px 0 0;
+
+}
+.card{
+    border: none !important;
+    box-shadow: rgba(0,0,0,0.1) 0px 18px 50px -10px;
+}
+.document__img{
+    position: relative;
+}
+.document__img span{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: max-content;
+    height: max-content;
+    z-index: 10;
+    background: var(--secondary-color);
+    color: #fff;
+    padding: 0.3rem 0.5rem;
+    border-radius: 3px 0 0 0 ;
+}
+.card__top span i{
+    color: var();
+}
+.document__rating{
+    font-size: .9rem;
+    color: var(--text-color);
+}
+.document__location{
+    
+    color: var(--heading-color);
+    font-weight: 500;
+    font-size: .9rem;
+
+}
+
+.document__rating i, 
+.document__location i{
+    font-size: 1rem;
+}
+.document__title{
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 1rem;
+    cursor: pointer;
+}
+.document__title a{
+    text-decoration: none;
+    color: var(--heading-color);
+    transition: .3s;
+}
+.document__title a:hover{
+    color: var(--secondary-color);
+}
+.card__bottom h5{
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+.card__bottom h5 span{
+    font-size: 0.8rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+.booking__btn{
+    background: var(--secondary-color) !important;
+    padding: 0.2rem 0.5rem !important;
+    cursor: pointer;
+
+}
+
+.booking__btn a{
+    text-decoration: none;
+    font-size: .9rem;
+    color: #fff;
+}
+.bookin__btn a:hover{
+    color: #fff
+}
