@@ -73,13 +73,13 @@ export const findAllDocument = async(req,res) =>{
 
 export const getDocumentBySearch = async(req, res)=>{
 
-    const subject = new RegExp(req.query.subject, 'i')
-    const semester =  new RegExp(req.query.semester, 'i')
-    
+    const subject = req.query.subject
+    const semester =  req.query.semester
+    console.log(`materia a buscar: ${subject}`)
     
 
     try{
-        const documents = await Document.find({subject, semester})
+        const documents = await Document.find({subject})
 
         res.status(200).json({success:true, message:"succesful search", count: documents.length,data:documents})
 

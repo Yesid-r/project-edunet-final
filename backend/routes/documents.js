@@ -19,7 +19,7 @@ router.get('/', findAllDocument)
 
 router.get('/search/:user', getDocumentsUser)
 
-router.get('/search/document/getDocumentBySearch', getDocumentBySearch )
+router.get('/searchdocument/document/getDocumentBySearch', getDocumentBySearch )
 
 router.get('/search/getDocumentCount', getDocumentCount)
 
